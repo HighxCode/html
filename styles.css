@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #292930;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    padding: 15px 100px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    outline: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.popup {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(41, 41, 48, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 9999;
+    display: none;
+}
+
+.popup-content {
+    background-color: #007bff;
+    background-image: linear-gradient(135deg, #cce0ff, #99ccff, #66b3ff, #3388ff, #0056b3, #007bff);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.close-btn:hover {
+    color: #ccc;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width: 200px;
+    font-size: 1em;
+}
+
+.save-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.save-btn:hover {
+    background-color: #003366;
+}
+
+/* تخصيصات الزر Redirect */
+#redirect-button {
+    position: fixed;
+    top: 20px; /* تم تغيير الوضع إلى الأعلى */
+    left: 20px; /* زر على اليسار */
+    z-index: 9999;
+}
+
+#redirect-button img {
+    width: 100px; /* تقليل حجم الصورة */
+    height: 40px; /* تقليل حجم الصورة */
+    filter: invert(100%); /* تغيير لون الصورة إلى الأزرق */
+}
+
+/* تخصيصات الزر Reload */
+#reload-button {
+    position: fixed;
+    top: 20px; /* تم تغيير الوضع إلى الأعلى */
+    right: 20px; /* زر على اليمين */
+    z-index: 9999;
+}
+
+#reload-button img {
+    width: 100px; /* تقليل حجم الصورة */
+    height: 40px; /* تقليل حجم الصورة */
+    filter: invert(100%); /* تغيير لون الصورة إلى الأزرق */
+}
+/* تخصيصات الزر Options */
+#options-button {
+    position: 100px;
+    z-index: 9999;
+}
+
+#options-button img {
+    width: 100px;
+    height: 40px;
+    filter: invert(100%);
+}

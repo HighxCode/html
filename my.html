@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Test</h1>
+        <!-- زر Options -->
+        <button id="options-button" onclick="openOptions()">
+            <img src="options.svg" alt="Options Icon">
+        </button>
+        <!-- زر Reload -->
+        <button id="reload-button" onclick="reloadPage()">
+            <img src="reload.svg" alt="Reload Icon">
+        </button>
+        <!-- زر Redirect -->
+        <button id="redirect-button" onclick="redirectPage()">
+            <img src="redirect.svg" alt="Redirect Icon">
+        </button>
+    </div>
+
+    <div id="options-popup" class="popup">
+        <div class="popup-content">
+            <h2>Choose Options</h2>
+            <form>
+                <label for="question1">Question 1:</label>
+                <input type="text" id="question1" name="question1"><br><br>
+                <label for="question2">Question 2:</label>
+                <input type="text" id="question2" name="question2"><br><br>
+                <label for="question3">Question 3:</label>
+                <input type="text" id="question3" name="question3"><br><br>
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
