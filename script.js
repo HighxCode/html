@@ -42,7 +42,7 @@ function reloadPage() {
     location.reload();
 }
 document.getElementById("reload-button").addEventListener("click", function() {
-    window.location.href = "https://example.com"; // تغيير عنوان URL إلى الصفحة المراد التحويل إليها
+    window.location.href = "https://discord.gg/est"; // تغيير عنوان URL إلى الصفحة المراد التحويل إليها
 });
 function openOptions() {
     var optionsPopup = document.getElementById("options-popup");
